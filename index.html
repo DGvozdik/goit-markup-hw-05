@@ -17,9 +17,9 @@
         <!-- Navigation -->
         <nav>
             <ul class="site-nav">
-                <li class="nav-li"><a href="./index.html" class="link current">Студія</a></li>
-                <li class="nav-li"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                <li class="nav-li"><a href="./contacts.html" class="link">Контакти </a></li>
+                <li class="nav-li"><a href="./index.html" class="link current"  >Студія</a></li>
+                <li class="nav-li"><a href="./portfolio.html" class="link"  >Портфоліо</a></li>
+                <li class="nav-li"><a href="./contacts.html" class="link"  >Контакти </a></li>
             </ul>
         </nav>
         <!-- Contacts -->
@@ -45,7 +45,7 @@
         <section class="section hero-section">
             <div class="container">
             <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button class="button hero-button">Замовити послугу</button>
+            <button class="button hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- About -->
@@ -95,9 +95,9 @@
             <div class="container">
             <h2 class="profile-title">Чим ми займаємося</h2>
             <ul class="profile-list">
-                <li class="profile-item"><img src="images/box-1.jpg" alt="keyboard" width="370" height="294"></li>
-                <li class="profile-item"><img src="images/box-2.jpg" alt="mobile" width="370" height="294"></li>
-                <li class="profile-item"><img src="images/box-3.jpg" alt="tablet" width="370" height="294"></li>
+                <li class="profile-item"><div class="profile-text"><p>Десктопні додатки</p></div><img src="images/box-1.jpg" alt="keyboard" width="370" height="294"></li>
+                <li class="profile-item"><div class="profile-text"><p>Мобільні додатки</p></div><img src="images/box-2.jpg" alt="mobile" width="370" height="294"></li>
+                <li class="profile-item"><div class="profile-text"><p>Дизайнерські рішення</p></div><img src="images/box-3.jpg" alt="tablet" width="370" height="294"></li>
             </ul>
             </div>
         </section>
@@ -256,5 +256,18 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        
+        <div class="modal">
+            <button class="button" data-modal-close>
+                <svg class="close-modal" width="20" height="20">
+                    <use href="./images/icons.svg#icon-close-modal"></use>
+                </svg>
+
+            </button>
+        </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
