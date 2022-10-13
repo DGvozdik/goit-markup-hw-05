@@ -154,7 +154,7 @@ nav{
 .link:focus,
 .link:hover {
     color: var(--active-color);
-    transition: opacity 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 
 /* Contacts */
@@ -180,7 +180,7 @@ nav{
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--active-color);
-    transition: opacity 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 
     
 }
@@ -250,7 +250,7 @@ nav{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    transition: opacity 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 /* About */
@@ -427,7 +427,7 @@ nav{
     color: var(--primary-bg-color);
     background-color: var(--active-color);
     border-radius: 50%;
-    transition: opacity 250ms var(--timing-function);
+    transition: babackground-color 250ms var(--timing-function);
 }
 .team-icon{
     display: block;
@@ -469,7 +469,7 @@ nav{
 .clients-link:hover, .clients-link:focus{
     color: var(--active-color);
     border: 1px solid var(--active-color);
-    transition: opacity 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
     
 }
 .clients-icon{
@@ -479,7 +479,7 @@ nav{
 }
 .clients-icon:hover, .clients-icon:focus{
     fill: var(--active-color);
-    transition: opacity 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
     
 }
 /* Footer */
@@ -535,7 +535,7 @@ address{
 .footer-contacts:hover,
 .footer-contacts:focus {
     color: var(--active-color);
-    transition: opacity 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 .footer-social{
     display: block;
@@ -566,11 +566,11 @@ address{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);  
+    background-color: rgba(255, 255, 255, 0.1);  
 }
 .footer-link:hover, .footer-link:focus{
     background-color: var(--active-color);
-    transition: opacity 250ms var(--timing-function);
+    transition: background 250ms var(--timing-function);
 }
 
 .icon-footer{
@@ -615,7 +615,7 @@ address{
     background-color: var(--active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-    transition: opacity 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 
 }
 /* Portfolio */
@@ -654,20 +654,21 @@ address{
     left: 0;
     min-width: 370px;
     min-height: 294px;
-    background: rgba(33, 150, 243, 0.9);
+    background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function), transform 250ms var(--timing-function) ;
 }
 
 .portfolio-link:hover .portfolio-overlay{
     transform: translateY(0);
+    transition: transform 250ms var(--timing-function);
    
 }
 
 .portfolio-link:hover, .portfolio-link:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transition: opacity 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function);
 }
 .portfolio-content{
     padding: 20px 24px;
@@ -698,7 +699,9 @@ address{
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(247, 244, 244, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -711,7 +714,7 @@ address{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 
     min-width: 528px;
     min-height: 581px;
@@ -719,11 +722,12 @@ address{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-  
+    transition: transform 550ms var(--timing-function);
 }
 
 .close-modal{
     position: absolute;
+    visibility:visible;
     top: 8px;
     right: 8px;
     min-width: 30px;
@@ -731,4 +735,5 @@ address{
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: visibility 550ms cubic-bezier(0.4, 0, 0.2, 1).
 } 
